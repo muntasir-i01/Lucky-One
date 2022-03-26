@@ -31,6 +31,11 @@ const Shop = () => {
         setCart([]);
     }
 
+    const addRandom = () => {
+        const random = Math.floor(Math.random() * cart.length);
+        console.log(random, cart[random]);              
+    }
+
      return (
         <div>
             <div className='shop-container'>
@@ -50,7 +55,7 @@ const Shop = () => {
                 {cart.map(c => <SelectedCart name = {c.name} img = {c.img}></SelectedCart>
                     )}
                     
-                    <button className='btn-order'>Choose 1 For Me</button>
+                    <button onClick={(random) => addRandom(random)} className='btn-order'>Choose 1 For Me</button>
                 <button onClick = {deleteCart} className='btn-order'>Choose Again</button>
                 </div>
                 
