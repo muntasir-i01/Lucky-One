@@ -1,10 +1,17 @@
 import './Shop.css'
 import React, { useEffect, useState } from 'react';
 import Product from '../Product/Product';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrash, faShoppingCart} from '@fortawesome/free-solid-svg-icons';
+
+
+
+
 
 const Shop = () => {
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState([]);
+    
 
     useEffect (() => {
         fetch('products.json')
@@ -13,11 +20,12 @@ const Shop = () => {
     }, [])
 
     const handleAddToCart = (product) => {
-        console.log(product); 
-       
+        console.log(product);        
         const newCart = [...cart, product];
         setCart(newCart);
     }
+
+    
 
     return (
         <div>
@@ -30,11 +38,13 @@ const Shop = () => {
                         >
                         </Product>)
                     }
-                    {/* <h3>This is for Products: {products.length}</h3> */}
+                  
                 </div>
                 <div className="cart-container">
-                    
-                    <h5>Selected Items: {cart.map(c => <li>c.name</li>)} </h5>
+                {/* <li>{c.name}</li> */}
+                {cart.map(c => <SelectedCart name = {c.name}></SelectedCart>
+                    )}
+                    <h5>Selected Items:  </h5>
                     <button>Choose 1 For Me</button>
                 <button>Choose Again</button>
                 </div>
@@ -43,5 +53,14 @@ const Shop = () => {
         </div>
     );
 };
+
+function SelectedCart(props) {
+    return (
+        <div>
+            <li>{props.name}</li>
+            <p><FontAwesomeIcon icon={faTrash}></FontAwesomeIcon></p>
+        </div>
+    )
+}
 
 export default Shop;
