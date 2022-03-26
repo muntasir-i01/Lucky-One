@@ -41,12 +41,13 @@ const Shop = () => {
                   
                 </div>
                 <div className="cart-container">
-                {/* <li>{c.name}</li> */}
-                {cart.map(c => <SelectedCart name = {c.name}></SelectedCart>
+                
+                <h5>Selected Items:  </h5> <br />
+                {cart.map(c => <SelectedCart name = {c.name} img = {c.img}></SelectedCart>
                     )}
-                    <h5>Selected Items:  </h5>
-                    <button>Choose 1 For Me</button>
-                <button>Choose Again</button>
+                    
+                    <button className='btn-order'>Choose 1 For Me</button>
+                <button className='btn-order'>Choose Again</button>
                 </div>
                 
             </div>
@@ -55,9 +56,11 @@ const Shop = () => {
 };
 
 function SelectedCart(props) {
+    const {name, img} = props;
     return (
-        <div>
-            <li>{props.name}</li>
+        <div className='addedItems'>
+            <img src={img} alt="" />
+            <p>{name}</p>
             <p><FontAwesomeIcon icon={faTrash}></FontAwesomeIcon></p>
         </div>
     )

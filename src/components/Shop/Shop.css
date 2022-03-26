@@ -13,6 +13,33 @@
 
 .cart-container {
     margin:10px;
+    padding: 10px;
+    background-color: bisque;
+}
+
+.addedItems {
+    display: flex;
+    margin: 5px;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.addedItems img {
+    width: 50px;
+    height: 40px;
+}
+
+.btn-order {
+    margin: 5px;
+    border: none;
+    background-color: darkslategrey;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.btn-order:hover {
+    background-color: blue;
 }
 
 @media screen and (max-width:1100px) {
