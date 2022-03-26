@@ -1,0 +1,14 @@
+.last {
+    margin: 80px;    
+}
+
+summary {
+    font-size: 20px;
+}
+
+details {
+    color: white;
+    background-image: linear-gradient(cyan, rgb(26, 26, 141));
+    padding: 15px;
+    border-radius: 5px;
+}
