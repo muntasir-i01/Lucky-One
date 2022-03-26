@@ -7,7 +7,7 @@ import { faTrash} from '@fortawesome/free-solid-svg-icons';
 const Shop = () => {
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState([]);
-    const [empty, setEmpty] = useState([]);
+    
     
 
     useEffect (() => {
@@ -19,7 +19,12 @@ const Shop = () => {
     const handleAddToCart = (product) => {
         console.log(product);        
         const newCart = [...cart, product];
-        setCart(newCart);
+        if (newCart.length > 4) {
+            return;
+        } else {
+            setCart(newCart);
+        }
+        // setCart(newCart);
     }
 
     const deleteCart = () => {
