@@ -2,15 +2,12 @@ import './Shop.css'
 import React, { useEffect, useState } from 'react';
 import Product from '../Product/Product';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTrash, faShoppingCart} from '@fortawesome/free-solid-svg-icons';
-
-
-
-
+import { faTrash} from '@fortawesome/free-solid-svg-icons';
 
 const Shop = () => {
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState([]);
+    const [empty, setEmpty] = useState([]);
     
 
     useEffect (() => {
@@ -25,9 +22,11 @@ const Shop = () => {
         setCart(newCart);
     }
 
-    
+    const deleteCart = () => {
+        setCart([]);
+    }
 
-    return (
+     return (
         <div>
             <div className='shop-container'>
                 <div className="products-container">
@@ -47,7 +46,7 @@ const Shop = () => {
                     )}
                     
                     <button className='btn-order'>Choose 1 For Me</button>
-                <button className='btn-order'>Choose Again</button>
+                <button onClick = {deleteCart} className='btn-order'>Choose Again</button>
                 </div>
                 
             </div>
