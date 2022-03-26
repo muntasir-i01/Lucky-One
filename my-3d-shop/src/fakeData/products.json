@@ -1,0 +1,12 @@
+[{"id":1,"name":"Human","img":"https://images.unsplash.com/photo-1625240752293-00b16d38c512?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80","price":60},
+{"id":2,"name":"Yoda","img":"https://images.unsplash.com/photo-1610081574260-e61e93e6e1aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80","price":64},
+{"id":3,"name":"Spring-Doodle","img":"https://images.unsplash.com/photo-1639628735078-ed2f038a193e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80","price":53},
+{"id":4,"name":"Tooth-Doodle","img":"https://images.unsplash.com/photo-1638803040283-7a5ffd48dad5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80","price":86},
+{"id":5,"name":"Car","img":"https://images.unsplash.com/photo-1638305451837-4a2417378fb5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1567&q=80","price":77},
+{"id":6,"name":"Mini-Robot","img":"https://images.unsplash.com/photo-1638957319391-9b81b996afca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80","price":60},
+{"id":7,"name":"Git-Cat","img":"https://images.unsplash.com/photo-1618401479427-c8ef9465fbe1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1443&q=80","price":65},
+{"id":8,"name":"Camera","img":"https://images.unsplash.com/photo-1633898902163-1c012ce74b94?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80","price":83},
+{"id":9,"name":"Gift","img":"https://images.unsplash.com/photo-1638225437870-1090bc859162?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80","price":70},
+{"id":10,"name":"Groot","img":"https://images.unsplash.com/photo-1613687443654-26424a9d0603?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80","price":86},
+{"id":11,"name":"Glass-show-piece","img":"https://images.unsplash.com/photo-1601315488950-3b5047998b38?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80","price":30},
+{"id":12,"name":"Computer","img":"https://images.unsplash.com/photo-1628329336337-8c33a8f08ec1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1043&q=80","price":39}]
