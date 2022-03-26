@@ -24,7 +24,7 @@ const Shop = () => {
         } else {
             setCart(newCart);
         }
-        // setCart(newCart);
+    
     }
 
     const deleteCart = () => {
@@ -33,7 +33,8 @@ const Shop = () => {
 
     const addRandom = () => {
         const random = Math.floor(Math.random() * cart.length);
-        console.log(random, cart[random]);              
+        console.log(random, cart[random]);
+         setCart([cart[random]]);         
     }
 
      return (
